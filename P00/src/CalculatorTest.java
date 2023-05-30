@@ -51,4 +51,25 @@ public class CalculatorTest {
 		assertEquals(actual,expected);
 	
 	}
+	@Test
+	public void testMulti() {
+		int a=20;
+		int b=50;
+		
+		Calculator cal=new Calculator();
+		int actual=cal.multi(a, b);
+		int expected =1000;
+		assertEquals(actual,expected);
+	}
+	@Test
+	public void testDiv() {
+		int a=50;
+		int b=2;
+		
+		Calculator cal= new Calculator();
+		int actual=cal.div(a, b);
+		int expected=25;
+		assertEquals(actual,expected);
+		
+	}
 }
